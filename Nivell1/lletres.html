@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      //Exercici 1
+      var myName=["C","A","R","O","L","I","N","A"];
+      for(i=0;i<myName.length;i++){
+          console.log(myName[i])
+      } 
+
+      //Exercici 2
+      var myName2=["C","4","R","O","L","I","N","A"]
+      for(i=0;i<myName2.length;i++){
+        if (myName2[i].match(/[aeiou]/i)) {
+          console.log("He trobat la VOCAL "+myName2[i])
+        } else if(myName2[i].match(/\d/)) {
+          console.log("Els noms de persones no contenen el número: "+myName2[i])
+        } else {
+          console.log("He trobat la CONSONANT "+myName2[i])
+        }
+      }
+
+      //Exercici 3
+      var myName3=["C","A","R","O","L","I","N","A"];
+      var letterCount={}
+
+      myName3.forEach(letter => {
+        if (letterCount[letter] != null) {
+          letterCount[letter] = letterCount[letter] + 1
+        } else {
+          letterCount[letter] = 1
+        }
+         
+      }
+    );
+      console.log(letterCount)
+    
+      //Exercici 4
+      var surname=["B","L","A","N","C","O"]
+      var fullName=myName.concat([" "]).concat(surname);
+      // var fullName=[...myName, " ", ...surname];
+      console.log(fullName)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
